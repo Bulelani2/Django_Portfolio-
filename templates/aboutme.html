@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bulelani's Portfolio</title>
+    <link rel="icon" href="Image/engineer.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/aboutme.css' %}?{% now "U" %}" />
+    <link rel="stylesheet" href="{%static   'css/darkmode.css' %}?{% now "U" %}" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WZXPVQDR2Q"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-WZXPVQDR2Q");
+  </script>
+
+  <body class="container-fluid body_section">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand brand-name" href="#">Bulelani</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/about">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/services">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/contact">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/weather">Check Weather</a>
+            </li>
+            <li>
+              <iframe
+                id="toggle-iframe"
+                onload="onIframeLoad()"
+                src="{% static 'html/toggle.html' %}"
+              ></iframe>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="Section1">
+      <div class="row">
+        <div class="col-lg-6 col-md">
+          <img
+            class="Programming"
+            src="{% static 'images/Programming.svg' %}"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-6 col-md Coding">
+          <h1>Programming & Problem Solving</h1>
+          <ul class="competitive_icon">
+            <li>
+              <a
+                href="https://www.hackerrank.com/bulelanimagwebu2"
+                target="_blank"
+              >
+                <i class="fab fa-hackerrank fa-4x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="Heading">
+          <h1>Degrees Received</h1>
+          <br />
+        </div>
+        <div class="timeline">
+          <div class="timeline-month">Education</div>
+          <div class="timeline-section">
+            <div class="timeline-date">2021 - 2023</div>
+            <div class="row">
+              <div class="col-lg">
+                <div class="timeline-box">
+                  <div class="box-title">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    Central University of Technology
+                    <p class="degree">Diploma in Information Technology</p>
+                  </div>
+                  <div class="box-content">
+                    <a
+                      class="btn btn-sm btn-dark float-right"
+                      role="button"
+                      href="https://www.cut.ac.za"
+                      target="_blank"
+                      style="color: white"
+                      >Website</a
+                    >
+                    <div class="box-item">
+                      💥 Majored in Web Development (C#), Software Engineering,
+                      Database Management, and Mobile Development (Flutter).
+                    </div>
+                    <div class="box-item">
+                      💥 Worked as Student Assistant and Peer Advisor.
+                      Participated in leadership and reading skills programs.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-section">
+            <div class="timeline-date">2015 - 2020</div>
+            <div class="row">
+              <div class="col-lg">
+                <div class="timeline-box">
+                  <div class="box-title">
+                    <i class="fas fa-school" aria-hidden="true"></i>
+                    Phumula Gardens Secondary School
+                    <p class="degree">Matric (Bachelor's Pass)</p>
+                  </div>
+                  <div class="box-content">
+                    <div class="box-item">
+                      💥 Subjects: Maths Literacy, Life Science, Geography,etc.
+                    </div>
+                    <div class="box-item"><b>💥 Year Completed</b>: 2020</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+      <div class="Heading">
+        <h1>Certifications</h1>
+      </div>
+      <div class="container certificate">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="{% static 'images/Python.jpg' %}"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text certificate-text">
+                  100 Days of Code: The Complete Python Pro Bootcamp <br /><span
+                    style="color: gray"
+                    >- by Udemy</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="{% static 'images/WebDev.jpg' %}"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text certificate-text">
+                  The Complete Web Development Bootcamp<br /><span
+                    style="color: gray"
+                    >- by Udemy</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="{% static 'images/Hacking.jpg' %}"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text certificate-text">
+                  Ethical Hacking for Beginners <br /><span style="color: gray"
+                    >- by Udemy</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">Made with ❤️ by Bulelani Magwebu</footer>
+    <script src="{% static 'js/darkmode.js' %}"></script>
+  </body>
+</html>

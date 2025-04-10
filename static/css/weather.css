@@ -1,0 +1,75 @@
+/* weather.css */
+
+/* Container for the weather section */
+#weather-section {
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  /* Weather page heading */
+  #weather-section h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #351458;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form elements */
+  #weather-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #weather-section form input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+    max-width: 300px;
+  }
+  
+  #weather-section form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #351458;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #weather-section form button:hover {
+    background-color: #532a7c;
+  }
+  
+  /* Weather information text styles */
+  #weather-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+  }
+  
+  #weather-section p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Center the weather icon image */
+  #weather-section img {
+    display: block;
+    margin: 20px auto;
+  }
+  

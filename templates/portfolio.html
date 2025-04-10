@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bulelani's Portfolio</title>
+    <link rel="icon" href="{% static 'images/dev.ico' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}?{% now "U" %}" />
+    <link rel="stylesheet" href="{% static 'css/darkmode.css' %}?{% now "U" %}" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+  </head>
+  <body class="container-fluid body_section">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand brand-name" href="#">Bulelani</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/about">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/services">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/contact">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerachor" href="/weather">Check Weather</a>
+            </li>
+            <li>
+              <iframe
+                id="toggle-iframe"
+                onload="onIframeLoad()"
+                src="{% static 'html/toggle.html' %}"
+              ></iframe>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="Projects" class="Section1">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <img
+            class="projectimage"
+            src="{% static 'images/Project.svg' %}"
+            alt="Projects Image"
+          />
+        </div>
+        <div class="col-lg-6 col-md-6 project-heading">
+          <h1 class="P-heading">Projects</h1>
+          <p class="p-text">
+            Here are some of the projects I’ve worked on using technologies like
+            Flutter, C#, Firebase, and Python. My focus is on mobile and web
+            development, data-driven applications, and user-friendly interfaces.
+          </p>
+        </div>
+      </div>
+
+      <div class="row Section1">
+        <div class="col-sm-6">
+          <a
+            class="Project-box"
+            target="_blank"
+            href="https://github.com/Bulelani2/pong"
+          >
+            <div class="card boxx">
+              <div class="card-body">
+                <h5 class="card-title">Pong Game</h5>
+                <p class="card-text project-text">
+                  A simple yet fun Pong game built in Python using the Pygame
+                  library. Players control paddles to bounce the ball and try to
+                  score points. The game includes a scoring system and
+                  adjustable game speed, providing an interactive and nostalgic
+                  gaming experience.
+                  <span
+                    class="iconify"
+                    data-icon="logos:python"
+                    data-inline="false"
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a
+            class="Project-box"
+            target="_blank"
+            href="https://github.com/Bulelani2/ecommerceflutterweb"
+          >
+            <div class="card boxx">
+              <div class="card-body">
+                <h5 class="card-title">
+                  eCommerce Website for iPhones & Sneakers
+                </h5>
+                <p class="card-text project-text">
+                  Developed a responsive eCommerce website using Flutter Web to
+                  showcase iPhones and sneakers. The platform allows users to
+                  browse products, filter by category, and contact sellers
+                  directly without a checkout process.
+                  <span
+                    class="iconify"
+                    data-icon="logos:flutter"
+                    data-inline="false"
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a
+            class="Project-box"
+            target="_blank"
+            href="https://github.com/Bulelani2/tic-tac-toe"
+          >
+            <div class="card boxx">
+              <div class="card-body">
+                <h5 class="card-title">Tic Tac Toe Game</h5>
+                <p class="card-text project-text">
+                  A simple and interactive Tic Tac Toe game built using Python.
+                  The game allows two players to play against each other on the
+                  same device, featuring a command-line interface for easy play.
+                  <span
+                    class="iconify"
+                    data-icon="logos:python"
+                    data-inline="false"
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a
+            class="Project-box"
+            target="_blank"
+            href="https://github.com/Bulelani2/examprep"
+          >
+            <div class="card boxx">
+              <div class="card-body">
+                <h5 class="card-title">Exam Preparation App</h5>
+                <p class="card-text project-text">
+                  A Flutter-based mobile app designed to help high school
+                  learners prepare for exams. It features categorized past
+                  questions (MCQs, Terminology, Matching), difficulty levels,
+                  exam tips, and subject-focused insights.
+                  <span
+                    class="iconify"
+                    data-icon="logos:firebase"
+                    data-inline="false"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="logos:flutter"
+                    data-inline="false"
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a
+            class="Project-box"
+            target="_blank"
+            href="https://github.com/Bulelani2/ecommerceflutterweb2"
+          >
+            <div class="card boxx">
+              <div class="card-body">
+                <h5 class="card-title">Beauty eCommerce Site</h5>
+                <p class="card-text project-text">
+                  A Flutter web catalog for premium weaves, braids, and makeup
+                  bookings. Supports filtering, WhatsApp contact, and
+                  multi-category services.
+                  <span
+                    class="iconify"
+                    data-icon="logos:flutter"
+                    data-inline="false"
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a
+            class="Project-box"
+            target="_blank"
+            href="https://github.com/Bulelani2/Snake-game"
+          >
+            <div class="card boxx">
+              <div class="card-body">
+                <h5 class="card-title">Snake Game</h5>
+                <p class="card-text project-text">
+                  A classic Snake game built using Python. The player controls
+                  the snake to eat food, grow longer, and avoid collisions with
+                  the walls or itself. Includes simple controls and a scoring
+                  system.
+                  <span
+                    class="iconify"
+                    data-icon="logos:python"
+                    data-inline="false"
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">Made with ❤️ by Bulelani Magwebu</footer>
+    <script src="{% static 'js/darkmode.js' %}"></script>
+  </body>
+</html>
