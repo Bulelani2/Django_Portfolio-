@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-hq-tr#b-yy=jk*7ire3sq&t!=f9hckv)fb+$g14m8+44p7tvom
 DEBUG = False
 
 ALLOWED_HOSTS = ["localhost","127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = []
+    
 
 
 # Application definition
@@ -38,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'weather',  # Custom app for weather data
+    'whitenoise.runserver_nostatic',  # For serving static files in production
     
 ]
 
@@ -49,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # For serving static files
 ]
 
 ROOT_URLCONF = 'example.urls'
@@ -122,6 +126,9 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
+
+# For serving static files in development
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Default primary key field type
