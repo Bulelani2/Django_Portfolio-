@@ -25,11 +25,12 @@ SECRET_KEY = 'django-insecure-hq-tr#b-yy=jk*7ire3sq&t!=f9hckv)fb+$g14m8+44p7tvom
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["djangoportfolio-production-e793.up.railway.app", 'https://djangoportfolio-production-e793.up.railway.app']
-CSRF_TRUSTED_ORIGINS = [
-    "djangoportfolio-production-e793.up.railway.app",
-    'https://djangoportfolio-production-e793.up.railway.app',
-]
+ALLOWED_HOSTS = ['*']
+
+# CSRF_TRUSTED_ORIGINS = [
+#     "djangoportfolio-production-e793.up.railway.app",
+#     'https://djangoportfolio-production-e793.up.railway.app',
+# ]
 
 
 # Application definition
