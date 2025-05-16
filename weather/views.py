@@ -8,7 +8,7 @@ def weather_view(request):
     
     if form.is_valid():
         city = form.cleaned_data['city']
-        api_key = ''
+        api_key = '071eefd0c696a951935ed87e0c8e7d1e'
         url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
         
         response = requests.get(url)
